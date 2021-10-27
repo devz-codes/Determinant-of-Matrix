@@ -9,7 +9,7 @@ def determinant(matrix):
     for i in range(0,size):
         if i!=size-1:
             for j in range(count,k-1,-1):
-                if matrix[i][j]==0:
+                if matrix[i][i]==0:
                     for l in range(0,size):
                         c = matrix[i][l]
                         matrix[i][l] = matrix[i+1][l]
@@ -27,5 +27,5 @@ def determinant(matrix):
     for i in range(0,size):
         det *= matrix[i][i]
     
+    det *=pow(-1,no)
     return det
-
