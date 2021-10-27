@@ -29,7 +29,3 @@ def determinant(matrix):
     
     return det
 
-
-mt = [[1,1],[3,5]]
-
-print(determinant(mt))
